@@ -86,6 +86,33 @@
             <td>EUA</td>
         </tr>
     </table>
+<hr>
 
+<!--action decimos a donde mandar la info del fomulario
+method: para indicar que metodo vamos a utilizar para mandar la info
+form y name= nombre al que corresponde el campo
+-->
+
+    <h2>FORMULARIO</h2>
+    <form>
+        <p>
+        <label for="nombre">Nombre del campo</label>
+        <input type="text" name="nombre" id="" placeholder="nombre"></p>
+
+        <p>
+        <label for="description">description</label>
+        <textarea name="description"></textarea></p>
+
+        <input type="radio" name="genero" id="" value="hombre">Hombre <br>
+        <input type="radio" name="genero" id="" value="mujer">Mujer <br>
+        <input type="radio" name="genero" id="" value="n/a">N/A <br>
+
+        <select name="genero2" id="">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+
+        <input type="submit" value="Enviar datos">
+    </form>
 </body>
 </html>
