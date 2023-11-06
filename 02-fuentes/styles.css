@@ -1,0 +1,39 @@
+/*IMPORTAR FUENTES*/
+@font-face {
+    font-family: keniaCustom;
+    src: url(fonts/Kenia/Kenia-Regular.ttf);
+}
+
+h1{
+    /**font-family: Arial, Helvetica, sans-serif; /*FUENTE ARIAL SI NO ESTA PASA A HELVETICA*/
+    font-family: 'keniaCustom','Poppins', sans-serif; /*LLAMAMOS FUENTE*/
+    /*font-style: italic; /*ESTILO DE TEXTO*/
+
+    /*COLORES*/
+    /*COLORES DEL SISTEMA*/
+    color: mediumpurple;
+    
+    /*COLORES HEXADECIMAL*/
+    /*color: transparent;  --trasparente* */
+    color: #000;
+
+    /*COLOR RGB*/
+    color: rgb(255, 225, 107);
+
+    /*COLOR RGBA PARAMETRO PARA TRANSPARENCIA */
+    color: rgb(255, 225, 107, 0.5);
+}
+
+h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;   
+    /*1em = 16px
+    por lo regular se usan em px y %
+    */
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold; /*ANCHURA DEL TEXTO 100, 300*/
+}

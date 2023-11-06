@@ -8,23 +8,46 @@
     <title>Master CSS</title>
 </head>
 <body>
-    <h1>Master CSS</h1>    
-    <ul>
+    <h1 id="titulo">Master CSS</h1>    
+    <ul id="menu">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Temario</a></li>
+        <li><a href="#">Temario</a>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </li>
         <li><a href="#">Reseñas</a></li>
         <li><a href="#">Contacto</a></li>
     </ul>
 
     <div id="descripcion">
         <h2>Descripción del Curso</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim accusantium reiciendis cum harum? Nulla illum accusamus earum sequi numquam voluptate laudantium blanditiis culpa ducimus tempore dolore alias, animi, possimus molestiae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum in earum esse quas, asperiores expedita labore molestias magnam impedit fugiat a? Non incidunt nesciunt possimus similique fuga natus, mollitia magni.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, facere nisi omnis, ipsam laboriosam veritatis officia culpa tempore recusandae, quaerat eos modi? Minima, provident fugit qui aliquam voluptate iste magni.</p>
+        <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim accusantium reiciendis cum harum? Nulla illum accusamus earum sequi numquam voluptate laudantium blanditiis culpa ducimus tempore dolore alias, animi, possimus molestiae.</p>
+        <p class="parrafo parrafo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum in earum esse quas, asperiores expedita labore molestias magnam impedit fugiat a? Non incidunt nesciunt possimus similique fuga natus, mollitia magni.</p>
+        <p class="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, facere nisi omnis, ipsam laboriosam veritatis officia culpa tempore recusandae, quaerat eos modi? Minima, provident fugit qui aliquam voluptate iste magni.</p>
     </div>
+
+    <div id="usuario">
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <div id="saludo">
+<h1>Hola</h1>
+</div>
+
+<div></div>
 </body>
 
 <footer>
-    Todos los derechos reservados &copy; DavidHernandezn
+    Todos los derechos reservados &copy; <a href="#">Davidhernandezn</a>
 </footer>
 </html>

@@ -1,4 +1,4 @@
-body{
+/**body{
     background-color: darkkhaki;
 }
 
@@ -7,4 +7,117 @@ h1{
     font-size: 50px;
     text-shadow: 0px 0px 10px black;
     text-decoration: underline;
+}**/
+
+
+/**SELECTORES**/
+
+/**UNIVERSAL TODO EL DOCUMENTO HTML*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*USARA EL DISPONIBLE*/
+   /* margin: 0px; MARGEN 0*/
+     /*padding: 0px;MARGEN INTERNO*/
+}
+
+/*SELECTOR DE ETIQUETA
+selecciona cualquiera los elementos de la pagina web con unta etiqueta concreta
+toma toda la caja*/
+h1{
+    background-color: red;
+    color: white;
+    padding:10px;
+}
+
+a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+/**SOLO A LOS ENLACES de footer*/
+footer a{
+color: red;
+}
+
+/*SELECTOR DE ID. solo de uso unico
+predomina de arriba abajoo, sobreescribe los estilos
+compartir estilos - #descripcion, #titulo*/
+#descripcion, 
+#titulo{
+    border: 5px solid black;
+    padding: 15px;
+}
+
+#titulo{
+background-color: blue; /*Color*/
+border: 2px dashed white; /*punteado*/
+}
+
+
+/*SELECTOR DE CLASE
+seleccionar multiples elementos*/
+
+.parrafo{
+    font-size: italic; /*texto en cursiva*/
+    text-decoration: underline; /*linea debajo del texto*/
+    font-weight: bold; /*negrita*/
+}
+
+.parrafo2 ,.parrafo3{/*comparte del 3*/
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.parrafo3{/*sobreescribe el 3*/
+    background-color: orange;
+    color: black;
+}
+/*SELECTOR DE ATRIBUTO
+elementos del dom y html en formularios*/
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block;/*display hace que todos los elementos funciones en una sola linea o en texto
+    o una cosa a lado de otra (line) o bloque como cajas individuales*/
+}
+
+/*APLICAR A LOS QUE TENGAN EL ATRIBUTO (inputs)*/
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/*SELECTOR HIJO
+identifica al MENU BUSCA LI Y APLICA A LOS A*/
+#menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/*PRIORIDAD - la ultima regla aplicada es la que se queda
+pero si se es más especifico es la que se queda*/
+#saludo h1{/*REGLA QUE QUEDA*/
+    background: blue;
+}
+
+h1{
+    background: yellow !important;/*para usar el menos espicificado usar important*/
 }
