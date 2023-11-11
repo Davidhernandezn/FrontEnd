@@ -1,0 +1,27 @@
+body{
+    /*background-color: red imagen repeticon posicion;*/
+    background-color: #cccc;
+    background-image: url("img/fondo_colores.jpg");/*PONER FONDO AL WEBSITE*/
+    background-repeat: no-repeat;/*NO REPETIR IMAGEN*/
+    
+    /**background-size: 100%;/*expandir fondo en toda la pantalla*/
+    background-size: 100% 100%; /*ADAPTAR IMAGEN EN TODA LA PANTALLA*/
+    
+    color: white;
+    background-attachment: fixed; /*FONDO ESTATICO*/
+    background-position: left bottom;/*POSICIONAR IMAGEN  A LA IZQUIERDA Y ABAJO*/
+
+}
+
+#caja{
+    border: 5px solid black;/*ANCHURA DE BORDE TIPO DE BORDE Y COLOR*/
+    padding: 10PX; /*margen interno*/
+    background-color: rgb(58, 60, 175);
+    color: white;/*COLOR DE TEXTO*/
+}
+
+h2{
+    color: red;
+    background-color: white;
+    border: 5px solid red;
+}
