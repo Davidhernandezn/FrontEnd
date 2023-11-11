@@ -1,23 +1,38 @@
 body{
     /*background-color: red imagen repeticon posicion;*/
     background-color: #cccc;
-    background-image: url("img/fondo_colores.jpg");/*PONER FONDO AL WEBSITE*/
+    /**background-image: url("img/fondo_colores.jpg");/*PONER FONDO AL WEBSITE*/
     background-repeat: no-repeat;/*NO REPETIR IMAGEN*/
     
     /**background-size: 100%;/*expandir fondo en toda la pantalla*/
     background-size: 100% 100%; /*ADAPTAR IMAGEN EN TODA LA PANTALLA*/
-    
+
     color: white;
     background-attachment: fixed; /*FONDO ESTATICO*/
     background-position: left bottom;/*POSICIONAR IMAGEN  A LA IZQUIERDA Y ABAJO*/
+    
+    text-indent: 48px;/*IDENTAR TEXTO CADA SALTO DE parrafo espacio al iniciar un parrafo*/
+    word-spacing: 10px;/*ESPACIO ENTRE PALABRAS*/
 
 }
 
 #caja{
     border: 5px solid black;/*ANCHURA DE BORDE TIPO DE BORDE Y COLOR*/
     padding: 10PX; /*margen interno*/
-    background-color: rgb(58, 60, 175);
+    background-color: rgb(27, 30, 216);
+    
+    /*TEXTOS*/
     color: white;/*COLOR DE TEXTO*/
+    font-family: "Open Sans";/*TIPOGRAFIA DE TEXTO*/
+    text-align: right;/*ALINEAR TEXTO A LA DERECHA*/
+    text-align: justify;/*JUSTIFICAR TEXTO*/
+    text-align: center;/*CENTRAR TEXTO*/
+    line-height: 40px; /*ALTURA DE LA LINEA ENTRER LINEAS*/
+    text-transform: lowercase;/*APARIENCIA DEL TEXTO*/
+    text-decoration: underline;/**DECORAR TEXTO*/
+    text-decoration: line-through; /*TACHAR TEXTO*/
+    vertical-align: top; /*alineado vertical*/
+
 }
 
 h2{
