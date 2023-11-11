@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 40px;
+}
+
+#caja{
+    display: block; /*PARA COMPORTARSE COMO CAJA*/
+    width: 250px;
+    height: 250px;
+    /*TAMAÑOS MAXIMOS
+    min-width: none;
+    max-width: ;*/
+    background-color: lightblue;
+    border: 10px solid red;
+   /* margin: 15px;A TODOS LOS LADOS*/
+   margin: 15px 10px 40px 24px; /*MODIFICAR CADA LADO*/
+   padding: 20px;
+   padding-bottom: 34px;/*MARGEN INTERIOR*/
+   float: left; /*FLOTAN ELEMENTOS SI USAS NONE LO CANCELA*/
+}
+
+#caja p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 230px; /*CENTRADO DE TEXTO 250 DE LA CAJA MEJOS 20 DEL TAMAÑO DEL TEXTO*/
+}
+
+.clearfix{
+    float: none;/*NO FLOTANTES*/
+    clear: both;/*LIMPIAR todos FLOTADOS, podemos poner a la izquierda o derecha*/
+}
+
+#cajas{
+    max-width: 1035px;
+
+    border: 1px solid black;
+}
