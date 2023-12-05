@@ -67,10 +67,15 @@ cursor: pointer;/*manita*/
     border: 1px solid #444;
     float: left;
     min-height: 500px;
+    max-height: 650px;
     text-align: center;
+    overflow-y: scroll;   /* overflow= OCULTAR LO QUE SALGA DE LA CAJA
+                            VISIBLE- LO MUESTRA AUN QUE SALGA
+                            SCROLL- para mantener el contenido MANEJA LOS EJES PARA LA BARRITA*/
 }
 
 #contenido .caja{
+    position: relative;/**absolute TODO EN LA MISMA POSICION*/
     width: 40%;
     height: 250px;
     background-color: #ccc;
@@ -110,4 +115,46 @@ text-shadow: 1px 1px 2px gray;
     height: 55px;
     line-height: 55px;
     border-top: 1px solid #ccc;
+}
+
+.libre{
+    /*MOVERLA LIBREMENTE*/
+    position: absolute;
+    top: 300px;/*LA CAJA SE SUPERPONE FRENTE A CUALQUIER ELEMENTO*/
+    left: 50%;/*SE MUEVE A LA MITAD*/
+
+
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+}
+
+
+/*zindex para controlar las capas que están encima de otra
+1 - atras, 2- enfrente de 1
+*/
+.libre1{
+    z-index: 2;
+}
+.libre2{
+    background-color: green;
+    top: 280px;
+    left: 52%;
+    z-index: 1;
+}
+
+.fija{
+    position: fixed;/*No se va a mover de donde esta*/
+    background-color: blue;
+    top: 50%;
+    left: 0px;
+
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
 }
