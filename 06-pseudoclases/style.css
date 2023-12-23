@@ -1,0 +1,61 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+/* first-child SELECIONA EL PRIMER HIJO */
+ul li:first-child{
+    color: firebrick;
+    font-weight: bold;
+}
+
+/* SELECIONAR NUMERO DE ELEMENTO A AFECTAR */
+ul li:nth-child(3){
+    color: firebrick;
+    font-weight: bold;
+}
+
+/* ULTIMO ELEMENTO */
+ul li:last-child{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#mi-enlace{
+    font-size: 30px;
+    color: forestgreen;
+}
+
+/* ENLACE ANTES DE SER ACCEDIDO */
+#mi-enlace:link{
+    color: gold;
+}
+
+/* ENLACE QUE YA FUE VISITADO */
+#mi-enlace:visited{
+    color:gray;
+}
+
+/* SOLO CUANDO PASO POR ENCIMA */
+#mi-enlace:hover{
+    color:blue;
+}
+
+/* CUANDO LO PULSE */
+#mi-enlace:active{
+    color:green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{
+    border: 4px dashed red;
+}
