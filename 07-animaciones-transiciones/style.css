@@ -1,0 +1,22 @@
+#boton{
+    padding: 20px;
+    display: block;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border: 5px solid blue;
+    /*transition: all 3s; Mostrar los estilos con duracion de 3s (segundos) - TODAS LAS PROPIEDADES**/
+    /**transition: border 500ms; APLICAR TRANSITION SOLO A UN ELEMENTO MS SEGUNDOS*/
+    
+    /*APLICAR TRANSITION POR SEPARADO*/
+    transition: border 500ms, background 3s, border-radius 1s;
+}
+
+#boton:hover{
+    border-radius: 15px;
+    background-color: orangered;
+    border: 5px solid red;
+}
