@@ -20,3 +20,90 @@
     background-color: orangered;
     border: 5px solid red;
 }
+
+#caja{
+    width: 250px;
+    height: 250px;
+    background-color: lightsalmon;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+
+    /* AGREGAR ANIMACION */
+    animation-name: desplazamiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+/* AGREGAR NOMBRE A LOS ESTILOS QUE SE APLICARAN EN LA ANIMACION*/
+@keyframes desplazamiento{
+    from{
+        /* EMPIEZA CON UNOS ESTILOS */
+        margin-left: 0px;
+    }
+
+    to{
+    /* TERMINA CON UNOS ESTILOS */
+    margin-left: 1200px;
+    }
+}
+
+
+
+
+
+
+#caja-2{
+    width: 250px;
+    height: 250px;
+    background-color: lightsalmon;
+    color: white;
+    border: 5px solid black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+
+    /* AGREGAR ANIMACION */
+    animation-name: desplazamiento2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /*LINEAR ES VELOCIDAD CONSTANTE SIN CAMBIAR*/
+}
+
+/* AGREGAR NOMBRE A LOS ESTILOS QUE SE APLICARAN EN LA ANIMACION POR PORCENTAJE*/
+@keyframes desplazamiento2{
+    0%{
+        /* EMPIEZA CON UNOS ESTILOS */
+        margin-left: 0px;
+        transform: rotate(0deg); /*ROTARLO 0 GRADOS*/
+    }
+
+    50%{
+    /* TERMINA CON UNOS ESTILOS */
+    margin-left: 1200px;
+    transform: rotate(360deg); /*ROTARLO 360 GRADOS*/
+    border-radius: 999px;
+    }
+
+    75%{
+        background-color: red;
+    }
+
+    77%{
+        border: 10px dashed blue;
+    }
+
+    100%{
+        /* EMPIEZA CON UNOS ESTILOS */
+        margin-left: 0px;
+        transform: rotate(0deg); /*ROTARLO 0 GRADOS*/
+
+    }
+}
+
