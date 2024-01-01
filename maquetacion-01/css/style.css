@@ -1,3 +1,46 @@
+/* FUENTES */
+
+
+/* ESTILOS GENERALES */
+*{
+padding: 0px;
+margin: 0px;
+}
+
 body{
-    background-color: firebrick;
+    background-image: url(../img/paven.png);
+}
+
+header .title {
+    text-align: center;
+    font-size: 40px;
+}
+
+header .title a{
+   color: #70b231;
+}
+
+/* cabecera */
+header{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto; /*CENTRAR DIV*/
+}
+
+header a{
+    text-decoration: none;
+}
+
+header .logotipo{
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+header .logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
 }
