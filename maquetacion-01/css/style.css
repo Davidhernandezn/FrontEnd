@@ -23,6 +23,71 @@ body{
     background-image: url(../img/paven.png);
 }
 
+/*ENLACES*/
+a{
+    color: #529125;
+    text-decoration: none;
+}
+a:visited{
+    color: #529125;/*si ya fue visitado que no cambie el color*/
+}
+a:hover{
+    color: #285616;
+}
+
+/*FORMULARIOS*/
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus, 
+select:focus{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"], 
+button{
+    display: block;
+    border: 1px solid green;
+    border-radius: 2px;
+    width: 60px;
+    padding: 3px;
+    color: white;
+    background-color: #70b231;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover, 
+button:hover{
+    box-shadow: 0px 0px 2px gray; 
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active, 
+button:active{
+    box-shadow: 0px 0px 3px gray inset; 
+    text-shadow: 0px 0px 1px #ccc;
+}
+
+
 header .title {
     text-align: center;
     font-size: 40px;
@@ -143,4 +208,95 @@ ocultar el menu deplegable*/
 #navBar > ul > li:hover > ul > li:hover{
     box-shadow: 0px 0px 6px #ccc inset;
     background: rgb(238, 237, 237);
+}
+
+
+/*CONTENIDO*/
+#content{
+    width: 1250px;
+    min-height: 1100px;/*ALTURA MINIMA PARA UN SCROOL MINIMO*/
+    margin: 0px auto;
+}
+
+/*BARRA LATERAL*/
+#aside, #frase{
+    clear: both;/*limpia ya que son relativos y flotarian uno al lado de otro (limpia flotados)*/
+   width: 200px; /*SI LE AGREGAS PADING VA A CRECES LA CAJA*/
+   float: left;/*LA CAJA VA A FLOTAR A LA IZQUIERDA*/
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;/*X Y tamaño color*/
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#aside .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;/*ARRIBA Y ABAJO*/
+    padding-left: 10px;/*IZQUIERDA*/
+    padding-right: 10px;/*DERECHA*/
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child{    
+    margin-bottom: 20px; /*AL ULTIMO ELEMENTO WIDGET*/
+}
+
+#aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;;
+    background: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+/*FORMULARIOS BARRA LATERAL*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="password"],
+#aside div input[type="email"],
+#aside div a
+{
+     display: block;/*PARA PODER MANIPULAR A MI GUSTO*/
+     width: 95%;
+     margin-top: 2px;
+     margin-bottom: 2px;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button
+{   
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+#aside input,
+#aside label{
+    margin: 0px auto; /*CENTRAR*/
+    text-align: center;
+}
+
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;/*ESTILO DEL PUNTO DE LA UL LISTA*/
+}
+
+#frase{
+    width: 180px;/*Le bajamos 20px por que originalmente lo heredado es de 200, al agregarle padding lo hacer mas grande*/
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
 }
