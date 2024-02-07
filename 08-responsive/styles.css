@@ -54,5 +54,36 @@ aside{
     margin: 15px;
 }
 
+/*RESPONSIVE*/
+/* DE 0 A 888 PX DE PANTALLA SE EJECUTARA ESTOS ESTILOS */
+@media(max-width: 888px){
+    #articles article{
+        width: 40%;
+        background: red;
+    }
+
+    #articles{
+        width: 100%;
+    }
+
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+        overflow: hidden;
+    }
+}
+
+/*AGREGAR CONDICIONES EXTRAS*/
+/* @media(max-width: 640px) and (max-heigth:200px){ */
+@media(max-width: 640px){
+    #articles article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+
 
 
