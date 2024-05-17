@@ -3,12 +3,31 @@ body{
     text-align: center;
 }
 
+/*FLEX DEBE TENER CONTENEDOR*/
 #layout{
-    border: 3px solid black;
+    /*width automatico toma el 100%*/
+    /*float left toma todo y ensucia los flotados y hay que limpoar (clear both )*/    border: 3px solid black;
+    display: flex;/*Alinea uno a lado de otro, se adapta al contenido (width auto)*/
+    
+    /*INVERTIR ORDEN*/
+    flex-direction: row; /*EN FILA (row, colummn, row-reverse, column-reverse, unset (por defecto))*/
+    flex-wrap: wrap ; /*ENVOLTORIO
+    wrap: NO PERMITE SOBRESALIR Y LOS COLOCA POR DEBAJO
+    nowrap NO ENVUELVE ELEMENTOS Y SE SALEN DEL CONTENEDOR
+    flex-flow: row warp UNE DIRECCCION Y WRAP (COMANDO UNO SOLO)*/
     padding: 5px;
+
+    /*ORDEN
+    APLICA A CADA ELEMENTO SE LE AGREGA MÁS NO AL CONTENEDOR
+    MIENTRAS MENOS SEA EL NUMERO MENOR SERÁ EL PRIMERO EN APARECER (APLICA NUMEROS NEGATIVOS)
+    */
+
 }
 
 .caja{
+    /*CUANTO CRECE UN */
+   /* flex-grow: 1; /*(0(DEFAULT) - 1(ADAPTA) )CADA ELEMENTO TENDRÁ EL MISMO ESPACIO*/
+
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -21,13 +40,16 @@ body{
 
 .red{
     background: red;
+    /*flex-grow: 8;*/
 }
 
-.gree{
+.green{
     background: green;
 }
 
 .blue{
+   /* flex-grow: 0;
+    flex-shrink: 0;*/
     background: blue;
 }
 
