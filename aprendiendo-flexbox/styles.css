@@ -11,11 +11,20 @@ body{
     display: flex;/*Alinea uno a lado de otro, se adapta al contenido (width auto)*/
     
     /*INVERTIR ORDEN*/
-    flex-direction: row; /*EN FILA (row, colummn, row-reverse, column-reverse, unset (por defecto))*/
-    flex-wrap: wrap ; /*ENVOLTORIO
+    /*flex-direction: row; /*EN FILA (row, colummn, row-reverse, column-reverse, unset (por defecto))*/
+    /*flex-wrap: wrap ; /*ENVOLTORIO
     wrap: NO PERMITE SOBRESALIR Y LOS COLOCA POR DEBAJO
     nowrap NO ENVUELVE ELEMENTOS Y SE SALEN DEL CONTENEDOR
     flex-flow: row warp UNE DIRECCCION Y WRAP (COMANDO UNO SOLO)*/
+    
+    flex-flow: row wrap;
+    /*justify-content: center; /*flex-end flex-start center ||| o tambien usar left o right*/
+    /*justify-content: space-around; /*Distribuye contenido y argrega margen*, PUEDES USAR flex-grow: 1 PARA TENER MEJOR EL ESPACIADO*/
+    /*justify-content: space-between; /*ESPACIO ENTRE ELEMENTOS Y CON PRIMER Y ULTOMO PEGADO AL INICIO Y FINAL*/
+/*    justify-content: space-evenly; /*CENTRADO Y ESPACIADO*/
+
+
+    border: 3px solid black;
     padding: 5px;
 
     /*ORDEN
@@ -27,9 +36,9 @@ body{
 
 .caja{
     /*CUANTO CRECE UN */
-   /* flex-grow: 1; /*(0(DEFAULT) - 1(ADAPTA) )CADA ELEMENTO TENDRÁ EL MISMO ESPACIO*/
+   /*flex-grow: 1; /*(0(DEFAULT) - 1(ADAPTA) )CADA ELEMENTO TENDRÁ EL MISMO ESPACIO*/
    /*flex-basis: 25%; /*LES DA EL MIN WIDHT - TAMAÑO MINIMO*/
-    flex-basis: calc((100% / 3) - 68px); /*ACTUALMNENTE ESTA APLICANDO SOLO A UNA CAJA (ORANGE)*/
+  /*  flex-basis: calc((100% / 3) - 68px); /*ACTUALMNENTE ESTA APLICANDO SOLO A UNA CAJA (ORANGE)*/
     /*flex-grow: 1; DISEÑO ADAPTABLE A CUALQUIER TAMAÑO**/
    font-size: 20px;
     font-weight: bold;
@@ -63,6 +72,7 @@ body{
 }
 
 .orange{
-    flex-basis: 100%;
+    /*DESDE CAJA SOLO SE USA AQUI
+    flex-basis: 100%;*/
     background: orange;
 }
