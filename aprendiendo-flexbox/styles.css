@@ -6,6 +6,7 @@ body{
 
 /*FLEX DEBE TENER CONTENEDOR*/
 #layout{
+    /*height: 700px; /*ALINEACIÓN VERTICAL*/
     /*width automatico toma el 100%*/
     /*float left toma todo y ensucia los flotados y hay que limpoar (clear both )*/    border: 3px solid black;
     display: flex;/*Alinea uno a lado de otro, se adapta al contenido (width auto)*/
@@ -21,7 +22,7 @@ body{
     /*justify-content: center; /*flex-end flex-start center ||| o tambien usar left o right*/
     /*justify-content: space-around; /*Distribuye contenido y argrega margen*, PUEDES USAR flex-grow: 1 PARA TENER MEJOR EL ESPACIADO*/
     /*justify-content: space-between; /*ESPACIO ENTRE ELEMENTOS Y CON PRIMER Y ULTOMO PEGADO AL INICIO Y FINAL*/
-/*    justify-content: space-evenly; /*CENTRADO Y ESPACIADO*/
+    justify-content: space-evenly; /*CENTRADO Y ESPACIADO*/
 
 
     border: 3px solid black;
@@ -32,10 +33,19 @@ body{
     MIENTRAS MENOS SEA EL NUMERO MENOR SERÁ EL PRIMERO EN APARECER (APLICA NUMEROS NEGATIVOS)
     */
 
+
+    /*ALINEAR VERTICALMENT*/
+    height: 600px; /*100VH CENTRADO TOTAL O 600 PARA MEJOR VISIBILIDAD*/
+    /*align-items: baseline; /*ALINEA A LA ALTURA DEL CONTENIDO*/
+    /*align-items: center; /*centrado total*/
+    align-items: flex-start; /*end start*/
+
 }
 
 .caja{
-    /*CUANTO CRECE UN */
+    flex-grow: 1;
+
+    /*CUANTO CRECE SU CONTENIDO SE ADAPTA ES DECIR TIENE 100% A MENOS QUE SE LE INDIQUE UN TAMAÑO */
    /*flex-grow: 1; /*(0(DEFAULT) - 1(ADAPTA) )CADA ELEMENTO TENDRÁ EL MISMO ESPACIO*/
    /*flex-basis: 25%; /*LES DA EL MIN WIDHT - TAMAÑO MINIMO*/
   /*  flex-basis: calc((100% / 3) - 68px); /*ACTUALMNENTE ESTA APLICANDO SOLO A UNA CAJA (ORANGE)*/
@@ -54,25 +64,31 @@ body{
     /*flex-basis: calc(100% / 3);/*TAMAÑO MINIMO */
     /*indicar el tamaño base y decidir si se expande o no
     flex-basis: calc(100% / 3);*/
-    background: var(--rojo);
+    align-self: flex-start; /*ESCALERA*/
+    background: red;
    /*  width: 25%;
-   flex-grow: 8;
+   flex-grow: 8;*/
 }
 
 .green{
     /*flex-basis: calc(100% / 3);*/
+    /*margin-top: 11%;*/
     background: green;
+    align-self: center; /*ESCALERA*/
 }
 
 .blue{
     /*flex-basis: calc(100% / 3);*/
    /* flex-grow: 0;
     flex-shrink: 0;*/
+    align-self: center;
     background: blue;
+
 }
 
 .orange{
     /*DESDE CAJA SOLO SE USA AQUI
     flex-basis: 100%;*/
+    align-self: flex-end;
     background: orange;
 }
