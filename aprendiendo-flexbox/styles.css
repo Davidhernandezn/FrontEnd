@@ -1,4 +1,5 @@
 body{
+    --rojo:red;
     font-family:  Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -27,8 +28,10 @@ body{
 .caja{
     /*CUANTO CRECE UN */
    /* flex-grow: 1; /*(0(DEFAULT) - 1(ADAPTA) )CADA ELEMENTO TENDRÁ EL MISMO ESPACIO*/
-
-    font-size: 20px;
+   /*flex-basis: 25%; /*LES DA EL MIN WIDHT - TAMAÑO MINIMO*/
+    flex-basis: calc((100% / 3) - 68px); /*ACTUALMNENTE ESTA APLICANDO SOLO A UNA CAJA (ORANGE)*/
+    /*flex-grow: 1; DISEÑO ADAPTABLE A CUALQUIER TAMAÑO**/
+   font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -39,20 +42,27 @@ body{
 }
 
 .red{
-    background: red;
-    /*flex-grow: 8;*/
+    /*flex-basis: calc(100% / 3);/*TAMAÑO MINIMO */
+    /*indicar el tamaño base y decidir si se expande o no
+    flex-basis: calc(100% / 3);*/
+    background: var(--rojo);
+   /*  width: 25%;
+   flex-grow: 8;
 }
 
 .green{
+    /*flex-basis: calc(100% / 3);*/
     background: green;
 }
 
 .blue{
+    /*flex-basis: calc(100% / 3);*/
    /* flex-grow: 0;
     flex-shrink: 0;*/
     background: blue;
 }
 
 .orange{
+    flex-basis: 100%;
     background: orange;
 }
