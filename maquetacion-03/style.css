@@ -17,3 +17,28 @@
     margin-bottom: 40px;
     min-height: 600px; /*MINIMO EN ALTURA*/
 }
+
+#header{
+    display: flex; /*COLOCA UN ELEMENTO A LADO DE OTRO*/
+    flex-direction: row;/*COMPORTAR EN MODO DE FILA*/
+    flex-wrap: wrap ; /*ENVUELTO, NO SALE DE LA CAJA*/
+    align-items: center; /*ALINE VERTICALMENTE CENTRADO*/
+    height: 120px;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+.logo{
+    flex-basis: 65%;/*TAMAÑO FLEX*/
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    text-shadow: 1px 1px 0px #ccc;
+    text-transform: uppercase;
+}
+
+.logo h1{
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+}
