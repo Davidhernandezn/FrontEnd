@@ -1,4 +1,3 @@
-
 /*ESTILOS GENERALES*/
 *{
     text-decoration: none;
@@ -28,7 +27,8 @@
 }
 
 .logo{
-    flex-basis: 65%;/*TAMAÑO FLEX*/
+    flex-grow: 1;/*ACADA ELEMENTO PARA QUE OCUPE TODO EL ANCHO RESPONSIVE*/
+    flex-basis: 50%;/*TAMAÑO FLEX*/
     padding: 10px;
     margin-left: 20px;
     color: black;
@@ -42,3 +42,35 @@
     font-weight: 900;
     font-size: 35px;
 }
+
+#menu{
+    flex-grow: 1;/*ACADA ELEMENTO PARA QUE OCUPE TODO EL ANCHO RESPONSIVE*/
+    flex-basis: 30%;
+    height: 100%; 
+    padding-right: 20px;
+}
+
+
+#menu > ul{/*CONTENEDOR DE FLEXBOX*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;/*ESPACIO ENTRE ELEMENTOS PEGADOS A LA DERECHA E IZQUIERDA*/
+    height: 100%;
+    list-style: none;
+}
+
+#menu a{
+    color: #444;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: all 300ms;
+}
+
+#menu a:hover{
+    background: #ccc;
+    color: white;
+}
+
+
