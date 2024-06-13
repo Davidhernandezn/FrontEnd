@@ -129,7 +129,6 @@
 
 #aside{
    /* order:2;MANEJAR ORDEN*/
-
     flex-basis: 15%;
     padding: 15px;
     margin-right: 30px;
@@ -202,3 +201,73 @@
     color: #444;
 }
 
+@media(max-width: 1201px){
+    #header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu > ul{
+        margin-top: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 660px){
+    #aside{
+        margin: 0px;
+    }
+
+    #aside ul{
+    display: flex;    
+    flex-flow: row wrap;
+    justify-content: space-between;
+    }
+
+    #aside ul li{
+        flex-grow: 1;/*PEGADO A LADO DE CADA UNO*/
+        margin-left: 5px;
+        margin-left: 5px;
+
+    }
+
+
+    .project{
+        margin: 0px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #projects{ /*CONTENEDOR DE PROYECTOS*/
+        flex-basis: 100%; /*ASIGNA TAMAÑO A ESACIO A LAS CAJAS*/
+        margin-right: 0px;
+    }
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #footer .logo{
+        flex-grow: 1;
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #footer .info{
+        flex-grow: 1;
+        order: 2;
+        margin-left: 20px;
+        color: #444;
+        text-align: center;
+        flex-basis: 100%;
+        margin: 0px;
+    }
+}
